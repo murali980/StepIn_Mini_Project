@@ -60,6 +60,3 @@ This application can useful for informing the details for organisation.
  HR06 | user details cannot seen by others| Future
  HR07 | user can keep his details personal| Future
  
-##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
