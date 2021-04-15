@@ -16,10 +16,13 @@ These records are accumulated, factual and comprehensive information related to 
 ## SWOT ANALYSIS
 Strength:
 It can be access easily and can update the deatils and we can also pass the details.
+
 Weakness:
 The user interface will not be so effective because we are running in console.
+
 Opportunities:
 We can modify the deatils at any time like when ever an employee has change his details to update then they can easily access.
+
 Threats:
 It is not so secured because everyone can have access to it. So they can see the all the details.
 
