@@ -9,8 +9,8 @@ src\modify.c\
 src\list.c
 
 # All test source files
-TEST_SRC = test/test.c\
-unity/unity.c
+TEST_SRC = test\test.c\
+unity\unity.c
 
 INC = -Iinc\
 -Iunity
@@ -34,7 +34,7 @@ endif
 .PHONY : all test coverage run clean 
 
 all:$(BUILD_DIR)
-	gcc test.c $(SRC) $(INC) -lm 
+	gcc test\test.c $(SRC) $(INC) -lm 
 
 # Call `make run` to run the application
 run: $(BUILD_DIR)
@@ -67,4 +67,4 @@ doc:
 	make -C document	
 
 $(BUILD_DIR):
-	mkdir $(BUILD_DIR)	
+	mkdir $(BUILD_DIR)
