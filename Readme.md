@@ -18,7 +18,7 @@ Folder             | Description
 
 PS No. |           Name           |     Features     | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|--------------------------|------------------|----------------|---------------|-------------|--------------
-291744 | Tadiboyina Murali Krishna|  F1, F2, F3, F4  |      X No      |     X No      |    X No     |X No     
+291744 | Tadiboyina Murali Krishna|  F1, F2, F3, F4  |       3        |       3       |      2      |    2     
 
 ## Challenges Faced and How Was It Overcome
 Feature_id |         Description
