@@ -60,3 +60,12 @@ This application can useful for informing the details for organisation.
  HR06 | user details cannot seen by others| Future
  HR07 | user can keep his details personal| Future
  
+## Low Level Requirements:
+ID    |            Description             | Status(Implemented/Future)
+------|------------------------------------|---------------------------
+LR01  | We can add details by pressing 1   | Implemented
+LR02  | We can list details by pressing 2  | Implemented
+LR03  | We can modify details by pressing 3| Implemented
+LR04  | We can delete details by pressing 4| Implemented
+LR05  | We can exit details by pressing 5  | Implemented
+LR06  | We can keep the deatils privacy    | Future
