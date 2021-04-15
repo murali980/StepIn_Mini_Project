@@ -3,8 +3,8 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 # All source code files
-SRC = src/add.c\
-src/delete.c\
+SRC = src\add.c\
+src\delete.c\
 src\modify.c\
 src\list.c
 
