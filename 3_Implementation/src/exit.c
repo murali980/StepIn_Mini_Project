@@ -1,20 +1,18 @@
-#include <stdio.h> ///for input output functions like printf, scanf
+#include <stdio.h> 
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h> 
-#include <string.h>  ///string operations
-/** List of Global Variable */
-COORD b = {1,0};
+#include <string.h>  
+COORD b = {1,0};/// coordinates
 void a(int x,int y)
 {
     b.X = x;
     b.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),b);
 }
-/** Main function */
-int main()
+int main()   ///main function
 {
-    FILE *fp, *ft; 
+    FILE *fp, *ft;  /// file open and close
     char another;
 	char choice;
   /** structure that represent a employee */
@@ -29,19 +27,18 @@ int main()
         float bs;        /// basic salary of employee
     };
     struct emp e; 
-    char employeename[40]; 
+    char employeename[40]; ///employee name for update or list the deatils
     long int resize; 
-    fp = fopen("EMP.DAT","rb+");  //open file
+    fp = fopen("EMP.DAT","rb+");  /
     if(fp == NULL)  //if file is null
     {
         fp = fopen("EMP.DAT","wb+"); //write
         if(fp == NULL)
         {
-            printf("Connot open file");
+            printf("Connot open file"); ///again if file is null
             exit(1);
         }
     }
-/// sizeo of each record i.e. size of structure variable e
     resize = sizeof(e);
     while(1)
     {
@@ -49,14 +46,14 @@ int main()
         a(20,5); 
         printf("6. Exit"); /// exit from the program
         a(20,15);
-        printf("Your Choice: ");
+        printf("Your Choice: "); /// choose your choice
         fflush(stdin); 
         choice = getchar(); 
         switch(choice)
         {
 			 case '5':
-            fclose(fp); /// close the file
-            exit(0); /// exit from the program
+            fclose(fp); ///close the file
+            exit(0); // exit from the program
         }
     }
     return 0;

@@ -1,20 +1,18 @@
-#include <stdio.h> ///for input output functions like printf, scanf
+#include <stdio.h> 
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h> 
-#include <string.h>  ///string operations
-/** List of Global Variable */
-COORD b = {1,0};
+#include <string.h>  
+COORD b = {1,0};/// coordinates
 void a(int x,int y)
 {
     b.X = x;
     b.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),b);
 }
-/** Main function */
-int main()
+int main()   ///main function
 {
-    FILE *fp, *ft; 
+    FILE *fp, *ft;  /// file open and close
     char another;
 	char choice;
   /** structure that represent a employee */
@@ -29,19 +27,18 @@ int main()
         float bs;        /// basic salary of employee
     };
     struct emp e; 
-    char employeename[40]; 
+    char employeename[40]; ///employee name for update or list the deatils
     long int resize; 
-    fp = fopen("EMP.DAT","rb+");  //open file
+    fp = fopen("EMP.DAT","rb+");  /
     if(fp == NULL)  //if file is null
     {
         fp = fopen("EMP.DAT","wb+"); //write
         if(fp == NULL)
         {
-            printf("Connot open file");
+            printf("Connot open file"); ///again if file is null
             exit(1);
         }
     }
-/// sizeo of each record i.e. size of structure variable e
     resize = sizeof(e);
     while(1)
     {
@@ -49,7 +46,7 @@ int main()
         a(20,5); 
         printf("1. Add Record"); /// option for add record
         a(20,7);
-        printf("Your Choice: ");
+        printf("Your Choice: "); /// choose your choice
         fflush(stdin); 
         choice = getchar(); 
         switch(choice)
@@ -61,24 +58,24 @@ int main()
             while(another == 'y')  
             {
                 ///add details of employee
-                printf("\nEnter name: ");
+                printf("\nEnter name: ");  // enter name
                 scanf("%s",e.name);
-                printf("\nEnter date of birth: ");
+                printf("\nEnter date of birth: ");  /// enter date of birth
                 scanf("%d", &e.DOB);
-                printf("\nEnter age: ");
+                printf("\nEnter age: "); /// enter age
                 scanf("%d", &e.age);
-                printf("\nEnter marital status: ");
+                printf("\nEnter marital status: "); /// enter marital status
                 scanf("%s",e.ms);
-                printf("\nEnter academic qualifications: ");
+                printf("\nEnter academic qualifications: ");  ///enter qualification
                 scanf("%s",e.qualification);
-                printf("\nEnter  previous employment details: ");
+                printf("\nEnter  previous employment details: "); ///enter previous status
                 scanf("%s",e.employement);
-                printf("\nEnter basic salary: ");
+                printf("\nEnter salary: "); ///enter salary
                 scanf("%f", &e.bs);
                 fwrite(&e,resize,1,fp); 
-                printf("\nAdd another record(y/n) ");
+                printf("\nAdd another record(y/n) "); /// add another one
                 fflush(stdin);
-                another = getchar();
+                another = getchar(); // to choose another
             }
             break;
         }
