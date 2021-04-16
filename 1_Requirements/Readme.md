@@ -13,6 +13,15 @@ This was a costless application and we have features like
 4.Delete record
 ## Defining Our System
 These records are accumulated, factual and comprehensive information related to concern records and detained.Complete details about all employees are maintained in personnel records, such as, name, date of birth, age marital status, basic salary,academic qualifications, previous employment details, etc.
+
+## Explanation:
+Employee record system has some functions which is used to take the details:
+1. ADD
+2. Delete
+3. Modify
+4. List
+5. Exit
+
 ## SWOT ANALYSIS
 Strength:
 It can be access easily and can update the deatils and we can also pass the details.
