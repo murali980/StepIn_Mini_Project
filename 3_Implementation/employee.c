@@ -57,13 +57,13 @@ int main()
         gotoxy(30,10); 
         printf("1. Add Record"); /// option for add record
         gotoxy(30,12);
-        printf("2. List Records"); /// option for showing existing record
+        printf("2. show Records"); /// option for showing existing record
         gotoxy(30,14);
         printf("3. Modify Records"); /// option for editing record
         gotoxy(30,16);
         printf("4. Delete Records"); /// option for deleting record
         gotoxy(30,18);
-        printf("5. Exit"); /// exit from the program
+        printf("6. Exit"); /// exit from the program
         gotoxy(30,20);
         printf("Your Choice: "); /// enter the choice 1, 2, 3, 4, 5
         fflush(stdin); 
