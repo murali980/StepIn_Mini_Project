@@ -1,1 +1,1 @@
-                fflush(stdin);
+another = getche();
