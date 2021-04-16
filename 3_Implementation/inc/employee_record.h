@@ -1,5 +1,5 @@
-#ifndef __employee_record_H__
-#define __employee_record_H__
+#ifndef __EMPLOYEE_RECORD_H__
+#define __EMPLOYEE_RECORD_H__
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
@@ -14,4 +14,4 @@ void list(void);
 * @return print_minefield
 */
 void exit( void );
-#endif  
+#endif  /* #define __EMPLOYEE_RECORD_H__ */
